@@ -10,7 +10,7 @@ cTexture::~cTexture() {
 
 }
 
-bool cTexture::Load(char* const filename, int type, int wraps, int wrapt, int magf, int minf, bool mipmap) {
+bool cTexture::Load(char const *filename, int type, int wraps, int wrapt, int magf, int minf, bool mipmap) {
 	//refer https://open.gl/textures
 	corona::Image* img;
 	int comp;
@@ -18,7 +18,7 @@ bool cTexture::Load(char* const filename, int type, int wraps, int wrapt, int ma
 	if (type == GL_RGB) {
 		comp = 3;
 	}
-	else if (type = GL_RGBA)
+	else if (type == GL_RGBA)
 	{
 		comp = 4;
 	}
@@ -57,7 +57,7 @@ int cTexture::GetId() {
 	return id;
 }
 
-void cTexture::GetSize(int *w,int *h) {
+void cTexture::GetSize(int* w,int* h) {
 	*w = width;
 	*h = height;
 

@@ -48,6 +48,7 @@ private:
 	int level, state;
 	cScene Scene;
 	cData Data;
+	cRect visible_area;
 
 
 };

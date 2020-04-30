@@ -28,6 +28,7 @@ int main(int argc, char** argv) {
 	
 	//glutInitWindowSize(500, 500);//////////need change !! 
 	glutDisplayFunc(AppRender);
+	Game.Init(1);
 	glutMainLoop();
 
 	return 1;
